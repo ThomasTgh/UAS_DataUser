@@ -9,6 +9,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 public class Register {
     public Register(){
@@ -16,12 +18,18 @@ public class Register {
 
         JLabel label1 = new JLabel("Email");
         label1.setBounds(25, 10, 100, 25);
-        
+        JTextField field1 = new JTextField();
+        field1.setBounds(120, 15, 100, 25);
+
         JLabel label2 = new JLabel("Nama");
         label2.setBounds(25, 40, 100, 25);
+        JTextField field2 = new JTextField();
+        field2.setBounds(120, 45, 100, 25);
 
         JLabel label3 = new JLabel("Password");
         label3.setBounds(25, 70, 100, 25);
+        JPasswordField field3 = new JPasswordField();
+        field3.setBounds(120, 75, 100, 25);
 
         JLabel label4 = new JLabel("Foto");
         label4.setBounds(25, 100, 100, 25);
@@ -51,6 +59,9 @@ public class Register {
         panel.add(label5);
         panel.add(button1);
         panel.add(button2);
+        panel.add(field1);
+        panel.add(field2);
+        panel.add(field3);
 
         frame.setSize(400,350);
         frame.add(panel, BorderLayout.CENTER);
